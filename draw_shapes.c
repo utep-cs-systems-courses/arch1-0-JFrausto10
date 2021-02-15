@@ -26,3 +26,12 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+// Prints a arrow that points up.
+void print_arrow(int leftCol, int size)
+{
+  int squareLeftCol = leftCol + 3;
+  print_triangle(leftCol, size);
+  print_square(squareLeftCol, size);
+  putchar('\n');
+}  
+  
